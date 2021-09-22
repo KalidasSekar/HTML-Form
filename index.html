@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Registration Form</title>
+</head>
+<body> 
+<div class="header"><h2>Registration Form</h2></div>    
+<div class="container">
+<form action="" id="regform" onsubmit="validateForm();">
+    <div class="row">
+        <div class="col-25">   
+            <label for="first_name">First Name : </label>
+        </div>    
+        <div class="col-75">
+            <input type="text" placeholder="Enter Your First Name" id="first_name" required>
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-25">   
+            <label for="last_name">Last Name : </label>
+        </div>    
+        <div class="col-75">
+            <input id="last_name" type="text" placeholder="Enter Your Last Name" required>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-25">   
+            <label for="address">Address : </label>
+        </div>    
+        <div class="col-75">
+            <input id="address" type="text" placeholder="Enter Your Address" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">   
+            <label for="pin">Pincode : </label>
+        </div>    
+        <div class="col-75">
+            <input id="pin" type="text" placeholder="Enter Your Pincode" maxlength="6" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">   
+            <label for="gender">Gender: </label>
+        </div>    
+        <div class="col-75">
+            <div id="gender">
+            <input type="radio" id="male" name="gender" value="Male" required>Male
+            <input type="radio" id="female" name="gender" value="Female" required>Female
+        </div>
+        </div>
+    </div>
+      
+    <div class="row">
+        <div class="col-25" id="choice">   
+            <label for="food">Choice of Food : </label>
+        </div>    
+        <div class="col-75">
+            <div class="food">
+            <select name="Food" id="food" size=5 multiple required>
+            <option value="Fruits">Fruits</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Grains">Grains</option>
+            <option value="Protein">Protein</option>
+            <option value="Dairy">Dairy</option>
+        </select>
+        </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">   
+            <label for="state">State : </label>
+        </div>    
+        <div class="col-75">
+            <input id="state" type="text" placeholder="Enter Your State" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">   
+            <label for="country">Country : </label>
+        </div>    
+        <div class="col-75">
+            <input id="country" type="text" placeholder="Enter Your Country" required>
+        </div>
+    </div>
+    <div>
+    <button id="submit">Submit</button>
+    </div>   
+    </div> 
+  </form>
+</div>
+<div class="table_container">
+    <table id="table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>Pincode</th>
+      <th>Gender</th>
+      <th>Food</th>
+      <th>State</th>
+      <th>Country</th>
+    </tr>
+  </table>
+</div>
+</div>
+</body> 
+<script type="text/javascript" src="script.js"></script>
+</html>
